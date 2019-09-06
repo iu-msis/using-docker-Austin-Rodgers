@@ -25,7 +25,7 @@
     </div>
   </nav>
   <h1>Available Books</h1>
-  <table class="books_table">
+  <table id="bookstable" class="books_table">
   <thead>
     <tr align="center">
       <th scope="col">Title:</th>
@@ -99,5 +99,12 @@
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+//docker plugin from https://github.com/tristen/tablesort
+
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('bookstable'));
+</script>
 </body>
 </html>

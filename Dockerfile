@@ -6,4 +6,4 @@ COPY public /srv/app/public
 
 COPY docker/apache/vhost.conf /etc/apache2/sites-available/000-default.conf
 
-<!-- Docker Root: root@2a1897d67700:/var/www/html# -->
+//Docker Root: root@2a1897d67700:/var/www/html#
