@@ -33,7 +33,7 @@
   </div>
 <div>
 <br></br>
-  <table class="user_info_table">
+  <table class="user_info_table" id="newUser">
   <thead>
     <tr align="center">
       <th scope="col">Name:</th>
@@ -45,14 +45,16 @@
   </thead>
   <tbody>
     <tr align="center">
-      <td>Mark Smith</td>
-      <td>United States</td>
-      <td>November 15th, 1989</td>
-      <td>30</td>
-      <td><a href="mailto:MarkSmith38@example.com">MarkSmith38@example.com</a></td>
+      <td>{{user.name.first}} {{user.name.last}}</td>
+      <td>{{user.location.postcode}}</td>
+      <td>{{user.dob.date}}</td>
+      <td>{{user.dob.age}}</td>
+      <td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
     </tr>
   </tbody>
 </table>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/RandomUser.js"></script>
 </body>
 </html>
