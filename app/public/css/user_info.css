@@ -1,0 +1,33 @@
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+  border-spacing: 15px;
+}
+
+body {
+  background-color: #fdfd98;
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+h1 {
+  color: blue;
+}
