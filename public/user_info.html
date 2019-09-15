@@ -26,12 +26,10 @@
   </nav>
 <h1>User information</h1>
 <br></br>
-  <div class="thumbnail">
-    <a href="img/mark_smith.jpg" target="_blank">
-    <img src="img/mark_smith.jpg" alt="MarkSmith"></a>
-    <a href="http://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/p770853/TaylorJohnSmith.jpg">Sourced from IMDB</a>
-  </div>
-<div>
+  <div class="picture" id="newUser">
+    <a v-bind:href="user.picture.large">
+    <img class="picThum" v-bind:src="user.picture.medium" id="randomPic"></a>
+<p>Picture Sourced from randomuser.me</p>
 <br></br>
   <table class="user_info_table" id="newUser">
   <thead>
@@ -46,10 +44,10 @@
   <tbody>
     <tr align="center">
       <td>{{user.name.first}} {{user.name.last}}</td>
-      <td>{{user.location.postcode}}</td>
+      <td>{{user.location.state}}</td>
       <td>{{user.dob.date}}</td>
       <td>{{user.dob.age}}</td>
-      <td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
+      <td><a href="mailto: {{user.email}}">{{user.email}}</a></td>
     </tr>
   </tbody>
 </table>

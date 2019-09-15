@@ -5,7 +5,7 @@ var newUser = new Vue({
   },
   methods: {
     fetchUser() {
-      fetch('randomuser.me-sample.json')
+      fetch('https://randomuser.me/api')
       .then(response => response.json())
       .then(json => {newUser.user = json.results[0]});
 
@@ -16,7 +16,7 @@ var newUser = new Vue({
 
     }
   },
-  created: function() {
+  created(){
     this.fetchUser();
   }
 
