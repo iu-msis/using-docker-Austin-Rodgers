@@ -1,7 +1,7 @@
 var newUser = new Vue({
       el: '#newUser',
     data: {
-        User: {
+        user: {
             "gender": "",
             "name": {
                 "title": "",
