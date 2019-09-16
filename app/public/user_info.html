@@ -25,13 +25,14 @@
     </div>
   </nav>
 <h1>User information</h1>
+<div id = "newUser" v-if="user">
 <br></br>
-  <div class="picture" id="newUser">
+  <div class="picture">
     <a v-bind:href="user.picture.large">
     <img class="picThum" v-bind:src="user.picture.medium" id="randomPic"></a>
 <p>Picture Sourced from randomuser.me</p>
 <br></br>
-  <table class="user_info_table" id="newUser">
+  <table class="user_info_table">
   <thead>
     <tr align="center">
       <th scope="col">Name:</th>
@@ -47,10 +48,11 @@
       <td>{{user.nat}}</td>
       <td>{{user.dob.date}}</td>
       <td>{{user.dob.age}}</td>
-      <td><a href="mailto: {{user.email}}">{{user.email}}</a></td>
+      <td><a href="'mailto:'+user.email">{{user.email}}</a></td>
     </tr>
   </tbody>
 </table>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/RandomUser.js"></script>
