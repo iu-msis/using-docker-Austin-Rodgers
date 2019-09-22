@@ -59,8 +59,7 @@ var newUser = new Vue({
             fetch('https://randomuser.me/api')
                 .then(response => response.json())
                 .then(json => { newUser.user = json.results[0] });
-        }
-    },
+                
     loadNewUser() {
            this.fetchUser();
            this.user = {
